@@ -1,0 +1,6 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Simulation Start
+GPIO Output = zzzzzzzz
+GPIO Output Enable = 00000000
+$finish called at time : 1120 ns : File "D:/vivado/project_10/project_10.srcs/sim_1/new/Top_tp.v" Line 57

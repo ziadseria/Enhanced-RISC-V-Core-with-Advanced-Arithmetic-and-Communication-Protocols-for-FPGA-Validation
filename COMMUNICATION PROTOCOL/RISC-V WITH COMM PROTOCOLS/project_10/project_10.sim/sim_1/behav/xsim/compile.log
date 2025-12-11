@@ -1,0 +1,80 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALUINPUTMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUINPUTMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/APB_Peripherals_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module APB_Peripherals_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/APB_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module APB_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_Target.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Target
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/BaudRate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BaudRate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_Execute_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_Execute_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Memory_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execute_Memory_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execute_Stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Decode_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fetch_Decode_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fetch_Stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Mux_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Mux_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/GPIO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPIO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/J_LMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module J_LMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Main_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMORY_STAGE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Writeback_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_Writeback_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCSrc_E_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_RISCV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_SoC_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Stage_Integration
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_APB_Slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_APB_Slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_RX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_RX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/WriteBack_Stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBack_Stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/project_10/project_10.srcs/sim_1/new/Top_tp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_tp

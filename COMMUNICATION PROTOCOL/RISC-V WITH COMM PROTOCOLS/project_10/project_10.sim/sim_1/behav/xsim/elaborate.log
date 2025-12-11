@@ -1,0 +1,51 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/anas_vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto cca4462db9e04c7d95ecf5989f679245 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_tp_behav xil_defaultlib.Top_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PCMUX
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_memory
+Compiling module xil_defaultlib.Adder_4
+Compiling module xil_defaultlib.Fetch_Stage
+Compiling module xil_defaultlib.Fetch_Decode_Register
+Compiling module xil_defaultlib.Main_Decoder
+Compiling module xil_defaultlib.ALU_Decoder
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.Extend_Unit
+Compiling module xil_defaultlib.Decode_stage
+Compiling module xil_defaultlib.Decode_Execute_Register
+Compiling module xil_defaultlib.PCSrc_E_Generator
+Compiling module xil_defaultlib.Forward_Mux_A
+Compiling module xil_defaultlib.Forward_Mux_B
+Compiling module xil_defaultlib.ALUINPUTMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Adder_Target
+Compiling module xil_defaultlib.Execute_Stage
+Compiling module xil_defaultlib.Execute_Memory_Register
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.MEMORY_STAGE
+Compiling module xil_defaultlib.Memory_Writeback_Register
+Compiling module xil_defaultlib.J_LMUX
+Compiling module xil_defaultlib.WriteBack_Stage
+Compiling module xil_defaultlib.Stage_Integration
+Compiling module xil_defaultlib.Hazard_Unit
+Compiling module xil_defaultlib.Pipeline_RISCV
+Compiling module xil_defaultlib.APB_master
+Compiling module xil_defaultlib.BaudRate_Generator(BITS=11)
+Compiling module xil_defaultlib.UART_RX
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.UART_TX
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.UART_APB_Slave
+Compiling module xil_defaultlib.GPIO
+Compiling module xil_defaultlib.APB_Peripherals_Top
+Compiling module xil_defaultlib.RISC_V_SoC_Top
+Compiling module xil_defaultlib.Top_tp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Top_tp_behav

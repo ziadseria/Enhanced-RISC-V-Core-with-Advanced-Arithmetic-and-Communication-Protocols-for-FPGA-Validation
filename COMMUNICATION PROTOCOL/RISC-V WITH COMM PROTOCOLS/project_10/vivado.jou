@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jun 20 13:40:36 2025
+# Process ID: 4232
+# Current directory: C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6676
+# Log file: C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/project_10/project_10.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+close_project
+open_project D:/vivado/project_10/project_10.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top GPIO [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+close_design
+file mkdir D:/vivado/project_10/project_10.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/vivado/project_10/project_10.srcs/sim_1/new/Top_tp.v w ]
+add_files -fileset sim_1 D:/vivado/project_10/project_10.srcs/sim_1/new/Top_tp.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RISC_V_SoC_Top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Top_tp [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source Top_tp.tcl
+close_sim
+archive_project D:/Project10/project_10.xpr.zip -temp_dir C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4232-DESKTOP-KCK1EVK -force -include_local_ip_cache -include_config_settings

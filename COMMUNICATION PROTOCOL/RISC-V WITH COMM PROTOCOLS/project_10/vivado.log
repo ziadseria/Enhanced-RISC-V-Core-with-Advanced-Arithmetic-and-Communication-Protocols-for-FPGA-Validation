@@ -1,0 +1,768 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jun 20 13:40:36 2025
+# Process ID: 4232
+# Current directory: C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6676
+# Log file: C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/project_10/project_10.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/anas_vivado/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:01:32 . Memory (MB): peak = 664.500 ; gain = 59.672
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v
+WARNING: [filemgmt 56-12] File 'D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: RISC_V_SoC_Top
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1103.555 ; gain = 176.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Fetch_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCMUX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCMUX' (1#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Program_Counter' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Program_Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Program_Counter' (2#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Program_Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_memory' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v:13]
+INFO: [Synth 8-3876] $readmem data file 'D:\vivado\Pipelined_Risc_V\RISCV_Pipelined\RISC-V_Pipeline\Source\Source\inst_mem_2.txt' is read successfully [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_memory' (3#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Adder_4' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_4' (4#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch_Stage' (5#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Fetch_Decode_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Decode_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch_Decode_Register' (6#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Decode_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Decode_stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Main_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (7#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Main_Decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (8#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (9#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Register_File.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (10#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Register_File.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Extend_Unit' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v:3]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Extend_Unit' (11#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_stage' (12#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Decode_Execute_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_Execute_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_Execute_Register' (13#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_Execute_Register.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUSrc_E' does not match port width (1) of module 'Decode_Execute_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:165]
+INFO: [Synth 8-6157] synthesizing module 'Execute_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCSrc_E_Generator' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:3]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:13]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'PCSrc_E_Generator' (14#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Forward_Mux_A' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_A.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Forward_Mux_A' (15#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_A.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Forward_Mux_B' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_B.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Forward_Mux_B' (16#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_B.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALUINPUTMUX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALUINPUTMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALUINPUTMUX' (17#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALUINPUTMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v:3]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (18#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Adder_Target' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_Target.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_Target' (19#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_Target.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Execute_Stage' (20#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Stage.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUSrc_E' does not match port width (1) of module 'Execute_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:179]
+INFO: [Synth 8-6157] synthesizing module 'Execute_Memory_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Memory_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Execute_Memory_Register' (21#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Memory_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Data_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (22#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Data_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEMORY_STAGE' (23#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Stage.v:3]
+ERROR: [Synth 8-448] named port connection 'apb_addr' does not exist for instance 'MEMS' of module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:243]
+ERROR: [Synth 8-448] named port connection 'apb_wdata' does not exist for instance 'MEMS' of module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:244]
+ERROR: [Synth 8-448] named port connection 'apb_write' does not exist for instance 'MEMS' of module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:245]
+ERROR: [Synth 8-448] named port connection 'apb_valid' does not exist for instance 'MEMS' of module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:246]
+ERROR: [Synth 8-448] named port connection 'apb_rdata' does not exist for instance 'MEMS' of module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:247]
+ERROR: [Synth 8-448] named port connection 'apb_ready' does not exist for instance 'MEMS' of module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:248]
+ERROR: [Synth 8-448] named port connection 'apb_done' does not exist for instance 'MEMS' of module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:249]
+INFO: [Synth 8-6157] synthesizing module 'Memory_Writeback_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Writeback_Register.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'Memory_Writeback_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Writeback_Register.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:4]
+ERROR: [Synth 8-6156] failed synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1167.734 ; gain = 240.324
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+54 Infos, 4 Warnings, 0 Critical Warnings and 12 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: RISC_V_SoC_Top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1167.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Fetch_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCMUX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCMUX' (1#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Program_Counter' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Program_Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Program_Counter' (2#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Program_Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_memory' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v:13]
+INFO: [Synth 8-3876] $readmem data file 'D:\vivado\Pipelined_Risc_V\RISCV_Pipelined\RISC-V_Pipeline\Source\Source\inst_mem_2.txt' is read successfully [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_memory' (3#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Adder_4' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_4' (4#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch_Stage' (5#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Fetch_Decode_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Decode_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch_Decode_Register' (6#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Decode_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Decode_stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Main_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (7#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Main_Decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (8#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (9#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Register_File.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (10#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Register_File.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Extend_Unit' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v:3]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Extend_Unit' (11#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_stage' (12#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Decode_Execute_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_Execute_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_Execute_Register' (13#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_Execute_Register.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUSrc_E' does not match port width (1) of module 'Decode_Execute_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:165]
+INFO: [Synth 8-6157] synthesizing module 'Execute_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCSrc_E_Generator' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:3]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:13]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'PCSrc_E_Generator' (14#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Forward_Mux_A' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_A.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Forward_Mux_A' (15#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_A.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Forward_Mux_B' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_B.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Forward_Mux_B' (16#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_B.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALUINPUTMUX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALUINPUTMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALUINPUTMUX' (17#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALUINPUTMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v:3]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (18#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Adder_Target' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_Target.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_Target' (19#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_Target.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Execute_Stage' (20#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Stage.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUSrc_E' does not match port width (1) of module 'Execute_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:179]
+INFO: [Synth 8-6157] synthesizing module 'Execute_Memory_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Memory_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Execute_Memory_Register' (21#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Memory_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Data_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (22#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Data_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEMORY_STAGE' (23#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Memory_Writeback_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Writeback_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Memory_Writeback_Register' (24#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Writeback_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'WriteBack_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/WriteBack_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'J_LMUX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/J_LMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'J_LMUX' (25#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/J_LMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBack_Stage' (26#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/WriteBack_Stage.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Stage_Integration' (27#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:4]
+ERROR: [Synth 8-448] named port connection 'APB_Addr' does not exist for instance 'SI' of module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:46]
+ERROR: [Synth 8-448] named port connection 'APB_WriteDat' does not exist for instance 'SI' of module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:47]
+ERROR: [Synth 8-448] named port connection 'APB_Write' does not exist for instance 'SI' of module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:48]
+ERROR: [Synth 8-448] named port connection 'APB_Valid' does not exist for instance 'SI' of module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:49]
+ERROR: [Synth 8-448] named port connection 'APB_ReadData' does not exist for instance 'SI' of module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:50]
+ERROR: [Synth 8-448] named port connection 'APB_Ready' does not exist for instance 'SI' of module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:51]
+WARNING: [Synth 8-7023] instance 'SI' of module 'Stage_Integration' has 26 connections declared, but only 19 given [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_Unit' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:3]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:75]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:75]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:76]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:76]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:77]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:77]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:78]
+ERROR: [Synth 8-6156] failed synthesizing module 'Hazard_Unit' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1167.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+60 Infos, 13 Warnings, 0 Critical Warnings and 10 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: RISC_V_SoC_Top
+ERROR: [Synth 8-2715] syntax error near ) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:35]
+Failed to read verilog 'D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v'
+0 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: RISC_V_SoC_Top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1280.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+ERROR: [Synth 8-439] module 'Stage_Integration' not found [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:24]
+ERROR: [Synth 8-6156] failed synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1295.711 ; gain = 15.461
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: RISC_V_SoC_Top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1295.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+ERROR: [Synth 8-439] module 'Stage_Integration' not found [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:24]
+ERROR: [Synth 8-6156] failed synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1295.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: RISC_V_SoC_Top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1314.008 ; gain = 18.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+ERROR: [Synth 8-439] module 'Stage_Integration' not found [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:24]
+ERROR: [Synth 8-6156] failed synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1314.008 ; gain = 18.297
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+close_project
+open_project D:/vivado/project_10/project_10.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/anas_vivado/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: RISC_V_SoC_Top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1315.723 ; gain = 1.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_V_SoC_Top' [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_RISCV' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Stage_Integration' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Fetch_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCMUX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCMUX' (1#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Program_Counter' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Program_Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Program_Counter' (2#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Program_Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_memory' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v:13]
+INFO: [Synth 8-3876] $readmem data file 'D:\vivado\Pipelined_Risc_V\RISCV_Pipelined\RISC-V_Pipeline\Source\Source\inst_mem_2.txt' is read successfully [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_memory' (3#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Adder_4' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_4' (4#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch_Stage' (5#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Fetch_Decode_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Decode_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch_Decode_Register' (6#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Decode_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Decode_stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Main_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (7#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Main_Decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (8#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU_Decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (9#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Register_File.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (10#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Register_File.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Extend_Unit' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v:3]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Extend_Unit' (11#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_stage' (12#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Decode_Execute_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_Execute_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_Execute_Register' (13#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_Execute_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Execute_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PCSrc_E_Generator' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:3]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:13]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'PCSrc_E_Generator' (14#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Forward_Mux_A' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_A.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Forward_Mux_A' (15#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_A.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Forward_Mux_B' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_B.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Forward_Mux_B' (16#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_B.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALUINPUTMUX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALUINPUTMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALUINPUTMUX' (17#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALUINPUTMUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v:3]
+INFO: [Synth 8-226] default block is never used [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (18#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Adder_Target' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_Target.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_Target' (19#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_Target.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Execute_Stage' (20#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Execute_Memory_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Memory_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Execute_Memory_Register' (21#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Memory_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEMORY_STAGE' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Data_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (22#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Data_Memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEMORY_STAGE' (23#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Memory_Writeback_Register' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Writeback_Register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Memory_Writeback_Register' (24#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Writeback_Register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'WriteBack_Stage' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/WriteBack_Stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'J_LMUX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/J_LMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'J_LMUX' (25#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/J_LMUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBack_Stage' (26#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/WriteBack_Stage.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Stage_Integration' (27#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_Unit' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:3]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:75]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:75]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:76]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:76]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:77]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:77]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_Unit' (28#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_RISCV' (29#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v:3]
+INFO: [Synth 8-6157] synthesizing module 'APB_Peripherals_Top' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/APB_Peripherals_Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'APB_master' [D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/APB_master.v:15]
+	Parameter Idle bound to: 2'b00 
+	Parameter Setup bound to: 2'b01 
+	Parameter Access bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/APB_master.v:64]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/APB_master.v:102]
+WARNING: [Synth 8-5788] Register Rdata_reg in module APB_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/APB_master.v:137]
+INFO: [Synth 8-6155] done synthesizing module 'APB_master' (30#1) [D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/APB_master.v:15]
+INFO: [Synth 8-6157] synthesizing module 'UART_APB_Slave' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_APB_Slave.v:3]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'UART' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART.v:3]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BaudRate_Generator' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/BaudRate_Generator.v:12]
+	Parameter BITS bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BaudRate_Generator' (31#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/BaudRate_Generator.v:12]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_RX.v:3]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 0 - type: integer 
+	Parameter start bound to: 1 - type: integer 
+	Parameter data bound to: 2 - type: integer 
+	Parameter stop bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_RX.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (32#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_RX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/FIFO.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (33#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/FIFO.v:4]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_TX.v:3]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 0 - type: integer 
+	Parameter start bound to: 1 - type: integer 
+	Parameter data bound to: 2 - type: integer 
+	Parameter stop bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_TX.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (34#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_TX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (35#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'UART_APB_Slave' (36#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_APB_Slave.v:3]
+INFO: [Synth 8-6157] synthesizing module 'GPIO' [D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/GPIO.v:1]
+	Parameter DIRECTION bound to: 4'b0000 
+	Parameter OUTPUT bound to: 4'b0001 
+	Parameter INPUT bound to: 4'b0010 
+INFO: [Synth 8-6155] done synthesizing module 'GPIO' (37#1) [D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/GPIO.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'APB_Peripherals_Top' (38#1) [D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/APB_Peripherals_Top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RISC_V_SoC_Top' (39#1) [D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v:25]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[31]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[30]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[29]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[28]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[27]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[26]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[25]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[24]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[23]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[22]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[21]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[20]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[19]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[18]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[17]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[16]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[15]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[14]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[13]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[12]
+WARNING: [Synth 8-3331] design UART_APB_Slave has unconnected port Pwdata[11]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[31]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[30]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[29]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[28]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[27]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[26]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[25]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[24]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[23]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[22]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[21]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[20]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[19]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[18]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[17]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[16]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[15]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[14]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[13]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[12]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[11]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[10]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[9]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[8]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[1]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port a[0]
+WARNING: [Synth 8-3331] design MEMORY_STAGE has unconnected port APB_Ready
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[31]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[29]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[28]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[27]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[26]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[25]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[24]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[23]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[22]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[21]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[20]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[19]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[18]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[17]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[16]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[15]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[11]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[10]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[9]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[8]
+WARNING: [Synth 8-3331] design Controller has unconnected port Instr[7]
+WARNING: [Synth 8-3331] design Instruction_memory has unconnected port A[1]
+WARNING: [Synth 8-3331] design Instruction_memory has unconnected port A[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1315.723 ; gain = 1.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1326.195 ; gain = 12.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1326.195 ; gain = 12.188
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1428.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1435.727 ; gain = 121.719
+88 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1435.727 ; gain = 121.719
+set_property top GPIO [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1449.438 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'GPIO' [D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/GPIO.v:1]
+	Parameter DIRECTION bound to: 4'b0000 
+	Parameter OUTPUT bound to: 4'b0001 
+	Parameter INPUT bound to: 4'b0010 
+INFO: [Synth 8-6155] done synthesizing module 'GPIO' (1#1) [D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/GPIO.v:1]
+WARNING: [Synth 8-3917] design GPIO has port pready_o driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1461.621 ; gain = 12.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1480.488 ; gain = 31.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1480.488 ; gain = 31.051
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1494.402 ; gain = 44.965
+close_design
+file mkdir D:/vivado/project_10/project_10.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/vivado/project_10/project_10.srcs/sim_1/new/Top_tp.v w ]
+add_files -fileset sim_1 D:/vivado/project_10/project_10.srcs/sim_1/new/Top_tp.v
+update_compile_order -fileset sim_1
+set_property top RISC_V_SoC_Top [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Top_tp [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado/project_10/project_10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Top_tp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivado/project_10/project_10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Top_tp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALUINPUTMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUINPUTMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/APB_Peripherals_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module APB_Peripherals_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/APB_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module APB_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_Target.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Target
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/BaudRate_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BaudRate_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_Execute_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_Execute_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Memory_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execute_Memory_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execute_Stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Decode_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fetch_Decode_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fetch_Stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Mux_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward_Mux_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/GPIO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPIO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/J_LMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module J_LMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Main_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMORY_STAGE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Writeback_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_Writeback_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCMUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCMUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCSrc_E_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_RISCV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/project_10/project_10.srcs/sources_1/new/RISC_V_SoC_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V_SoC_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Stage_Integration
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_APB_Slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_APB_Slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_RX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_RX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/WriteBack_Stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBack_Stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/project_10/project_10.srcs/sim_1/new/Top_tp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_tp
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1548.910 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivado/project_10/project_10.sim/sim_1/behav/xsim'
+"xelab -wto cca4462db9e04c7d95ecf5989f679245 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_tp_behav xil_defaultlib.Top_tp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/anas_vivado/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto cca4462db9e04c7d95ecf5989f679245 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_tp_behav xil_defaultlib.Top_tp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PCMUX
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_memory
+Compiling module xil_defaultlib.Adder_4
+Compiling module xil_defaultlib.Fetch_Stage
+Compiling module xil_defaultlib.Fetch_Decode_Register
+Compiling module xil_defaultlib.Main_Decoder
+Compiling module xil_defaultlib.ALU_Decoder
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.Extend_Unit
+Compiling module xil_defaultlib.Decode_stage
+Compiling module xil_defaultlib.Decode_Execute_Register
+Compiling module xil_defaultlib.PCSrc_E_Generator
+Compiling module xil_defaultlib.Forward_Mux_A
+Compiling module xil_defaultlib.Forward_Mux_B
+Compiling module xil_defaultlib.ALUINPUTMUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Adder_Target
+Compiling module xil_defaultlib.Execute_Stage
+Compiling module xil_defaultlib.Execute_Memory_Register
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.MEMORY_STAGE
+Compiling module xil_defaultlib.Memory_Writeback_Register
+Compiling module xil_defaultlib.J_LMUX
+Compiling module xil_defaultlib.WriteBack_Stage
+Compiling module xil_defaultlib.Stage_Integration
+Compiling module xil_defaultlib.Hazard_Unit
+Compiling module xil_defaultlib.Pipeline_RISCV
+Compiling module xil_defaultlib.APB_master
+Compiling module xil_defaultlib.BaudRate_Generator(BITS=11)
+Compiling module xil_defaultlib.UART_RX
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.UART_TX
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.UART_APB_Slave
+Compiling module xil_defaultlib.GPIO
+Compiling module xil_defaultlib.APB_Peripherals_Top
+Compiling module xil_defaultlib.RISC_V_SoC_Top
+Compiling module xil_defaultlib.Top_tp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Top_tp_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/vivado/project_10/project_10.sim/sim_1/behav/xsim/xsim.dir/Top_tp_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 20 15:45:29 2025...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1548.910 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivado/project_10/project_10.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_tp_behav -key {Behavioral:sim_1:Functional:Top_tp} -tclbatch {Top_tp.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Top_tp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000
+Simulation Start
+GPIO Output = zzzzzzzz
+GPIO Output Enable = 00000000
+$finish called at time : 1120 ns : File "D:/vivado/project_10/project_10.srcs/sim_1/new/Top_tp.v" Line 57
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1548.910 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_tp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:33 . Memory (MB): peak = 1548.910 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1548.910 ; gain = 0.000
+archive_project D:/Project10/project_10.xpr.zip -temp_dir C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4232-DESKTOP-KCK1EVK -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4232-DESKTOP-KCK1EVK' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/AHMED/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4232-DESKTOP-KCK1EVK/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

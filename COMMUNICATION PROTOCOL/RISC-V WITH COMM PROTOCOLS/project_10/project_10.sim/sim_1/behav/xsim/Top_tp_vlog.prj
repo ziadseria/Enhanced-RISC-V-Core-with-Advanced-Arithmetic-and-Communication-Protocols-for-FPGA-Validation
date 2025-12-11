@@ -1,0 +1,48 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALUINPUTMUX.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/ALU_Decoder.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/APB_Peripherals_Top.v" \
+"../../../../../Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/APB_master.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_4.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Adder_Target.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/BaudRate_Generator.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Controller.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Data_Memory.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_Execute_Register.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Decode_stage.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Memory_Register.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Execute_Stage.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Extend_Unit.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/FIFO.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Decode_Register.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Fetch_Stage.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_A.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Forward_Mux_B.v" \
+"../../../../../Pipelined_Risc_V/Pipelined_Risc_V.srcs/sources_1/new/GPIO.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Hazard_Unit.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Instruction_memory.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/J_LMUX.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Main_Decoder.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Stage.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Memory_Writeback_Register.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCMUX.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/PCSrc_E_Generator.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Pipeline_RISCV.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Program_Counter.v" \
+"../../../../project_10.srcs/sources_1/new/RISC_V_SoC_Top.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/imports/Pure Codes/Register_File.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/Stages_Integration.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_APB_Slave.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_RX.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/UART_TX.v" \
+"../../../../../Projects/RISCV_Pipeline.xpr/RISCV_Pipeline/RISCV_Pipeline.srcs/sources_1/new/WriteBack_Stage.v" \
+"../../../../project_10.srcs/sim_1/new/Top_tp.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
